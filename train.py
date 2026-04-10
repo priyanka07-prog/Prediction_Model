@@ -18,7 +18,7 @@ model = LinearRegression()
 model.fit(x_train, y_train)
 
 #Save Model 
-with open ("mode;.pkl", "wb") as f:
+with open ("model.pkl", "wb") as f:
     pickle.dump(model, f)
     
 print ("Model train and saved!")
