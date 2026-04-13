@@ -1,5 +1,6 @@
 import pickle 
 import numpy as np 
+import pandas as pd
 
 #Load model 
 with open ("model.pkl", "rb") as f:

@@ -6,8 +6,11 @@ import pickle
 #Load Dataset
 df = pd.read_csv("C:\\Users\\PRIYANKA\\Downloads\\archive (2)\\CardioGoodFitness.csv")
 
+#convert columns into numbers
+df = pd.get_dummies(df, drop_first=True)
+
 #Select Features
-x = df[["Age", "Education", "Usage", "Fitness", "Miles"]]
+x = df[["Education","Age","Usage", "Fitness", "Miles"]]
 y = df["Income"]
 
 #Split Data
